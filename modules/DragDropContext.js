@@ -68,7 +68,7 @@ function DragDropContext(backend) {
       };
 
       DragDropContextContainer.prototype.render = function render() {
-        return _react2['default'].createElement(DecoratedComponent, _extends({}, this.props, {
+        return _react2['default'].createElement(DecoratedComponent, _extends({}, {dragDropContext: this}, this.props, {
           ref: 'child' }));
       };
 

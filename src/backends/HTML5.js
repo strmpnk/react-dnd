@@ -88,7 +88,7 @@ function matchNativeItemType(dataTransfer) {
 
   return Object.keys(nativeTypesConfig).filter(nativeItemType => {
     const { matchesTypes } = nativeTypesConfig[nativeItemType];
-    return matchesTypes.some(t => dataTransferTypes.indexOf(t) > -1)
+    return matchesTypes.some(t => dataTransferTypes.indexOf(t) > -1);
   })[0] || null;
 }
 
